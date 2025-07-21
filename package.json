@@ -1,0 +1,21 @@
+{
+  "name": "passmkt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaduaMKT/passMKT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaduaMKT/passMKT/issues"
+  },
+  "homepage": "https://github.com/FaduaMKT/passMKT#readme"
+}

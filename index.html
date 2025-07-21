@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PassMKT</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="auth" class="auth-container">
+    <p>Ingrese la contraseña principal:</p>
+    <input type="password" id="passwordInput">
+    <button onclick="autenticacion('main')">Ingresar</button>
+  </div>
+
+  <div id="content" style="display: none;">
+    <h1>Accesos Institucionales</h1>
+    <div class="cards-container">
+      <div class="card">
+        <h2>Facebook Fadua</h2>
+        <p><strong>Origen:</strong> Comunicación</p>
+        <div class="credentials hidden">
+          <p><strong>Usuario:</strong> faduaok</p>
+          <p><strong>Contraseña:</strong> face2024!</p>
+        </div>
+        <button onclick="verContrasena(this)">Ver contraseña</button>
+      </div>
+
+      <div class="card">
+        <h2>Canva Empresa</h2>
+        <p><strong>Origen:</strong> Marketing</p>
+        <div class="credentials hidden">
+          <p><strong>Usuario:</strong> marketing@fadua.com</p>
+          <p><strong>Contraseña:</strong> canva2024!</p>
+        </div>
+        <button onclick="verContrasena(this)">Ver contraseña</button>
+      </div>
+
+      <div class="card">
+        <h2>Google Drive RRHH</h2>
+        <p><strong>Origen:</strong> RRHH</p>
+        <div class="credentials hidden">
+          <p><strong>Usuario:</strong> rrhh@fadua.com</p>
+          <p><strong>Contraseña:</strong> drive2024!</p>
+        </div>
+        <button onclick="verContrasena(this)">Ver contraseña</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
