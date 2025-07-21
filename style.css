@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(155deg, #ED1B34 0%, black 100%);
+  background-color: #ED1B34; /* Rojo liso */
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -8,35 +8,44 @@ body {
 }
 
 .auth-container {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3); /* más oscuro para contraste */
+  padding: 30px 20px;
+  border-radius: 12px;
   width: 90%;
   max-width: 400px;
   margin: 100px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.auth-container p {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 input[type="password"] {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
+  padding: 12px 16px;
+  margin-bottom: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  background: #ffffff33;
+  background: #ffffff22;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1rem;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background: #ffffff55;
+  background: #ffffff44;
 }
 
 .cards-container {
@@ -48,7 +57,7 @@ button:hover {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 15px;
   border-radius: 8px;
   width: 300px;
