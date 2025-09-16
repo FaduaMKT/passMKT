@@ -71,6 +71,7 @@ button:hover {
   overflow-wrap: break-word;
   white-space: normal;
   text-align: center;
+  word-break: break-all;
 }
 
 .credentials {
