@@ -60,8 +60,17 @@ button:hover {
   background: rgba(0, 0, 0, 0.2);
   padding: 15px;
   border-radius: 8px;
-  width: 300px;
+  width: calc(25% - 20px); /* 4 por fila */
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+}
+
+/* títulos de las cards (asegura que URLs largas no se salgan) */
+.card h3 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
 }
 
 .credentials {
@@ -70,4 +79,23 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .card {
+    width: calc(33.33% - 20px); /* 3 por fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* 2 por fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* 1 por fila */
+  }
 }
